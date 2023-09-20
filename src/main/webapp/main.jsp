@@ -73,10 +73,10 @@
 					<div class="col-md-12">
 						<% if(session.getAttribute("Login") != null) {%>
 						<br><br>
-						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/gamestart.png" width="100%"> </a>
+						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/button1.png" width="80%"> </a>
 						<%} else { %>
 						<br><br>
-						<img id="start" alt="" src="/Five/img/main/gamestart.png" width="100%" onclick="nonlogin()">
+						<img id="start" alt="" src="/Five/img/main/button1.png" width="80%" onclick="nonlogin()">
 						<%} %>
 						
 					</div>

@@ -31,7 +31,7 @@
 	<div class="container header">
 		<div class="row firstrow">
 			<div class="col-md-4  text-center">
-				<a href="/Five/main.jsp"> <img alt="" src="/Five/img/game/charlogo.png"> </a>
+				<a href="/Five/main.jsp"> <img alt="" src="/Five/img/game/web_logo.gif"> </a>
 
 			</div>
 
