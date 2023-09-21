@@ -6,16 +6,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-	#start:hover {
-	  -webkit-transform: scale(0.8);
-	  -moz-transform: scale(0.8);
-	  -ms-transform: scale(0.8);
-	  -o-transform: scale(0.8);
-	  transform: scale(0.8);
-	}
-	</style>
-<title>메인 페이지</title>
+
+
+<title>웹 블루마블</title>
 </head>
 <body>
 
@@ -73,11 +66,15 @@
 					<div class="col-md-12">
 						<% if(session.getAttribute("Login") != null) {%>
 						<br><br>
-						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/button1.png" width="80%"> </a>
+						
+						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/start_button.gif" > </a>
+				
 						<%} else { %>
 						<br><br>
-						<img id="start" alt="" src="/Five/img/main/button1.png" width="80%" onclick="nonlogin()">
+						<img id="start" alt="" src="/Five/img/main/start_button.gif"  onclick="nonlogin()">
+						
 						<%} %>
+					
 						
 					</div>
 					<div class="col-md-12 text-center" style="font-weight: bold;">
@@ -100,15 +97,15 @@
 				<div class="right_first">
 				<div>
 					
-					<h4 class="text-center"> 해윰마블 일정 모음 </h4>
+					<h4 class="text-center"> 웹 마블 일정 모음 </h4>
 				</div>
 				<div class="right-info">
 					<br>
-					<ul style="font-size : 25px;  ">
-						<li> 06-07 : 클로즈베타 시작  </li>
-						<li> 06-08 : 중간 점검 </li>
-						<li> 06-09 : 최종 마무리 </li>
-						<li> 06-10 : 오ㅡ픈 !</li>
+					<ul style="font-size : 22px;  ">
+						<li> 09-22 : main page 완성  </li>
+						<li> 09-25 : game page 완성 </li>
+						<li> 09-26 : 오픈 </li>
+					
 					</ul>
 					
 				</div>
