@@ -3,6 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="/Five/css/signagree.css" rel="stylesheet">
+<style type="text/css">
+	
+	</style>
 </head>
 <body>
 	
@@ -211,7 +215,7 @@ e .연락처
 				  </label>
 				 </div>
 			</div>
-			<div class="col-md-12 my-5">
+			<div  class="col-md-12 my-5">
 				<h4> 개인 정보 처리 방침</h4>
 				<textarea rows="10" cols="" class="form-control" readonly="readonly" style="background-color: white;">
 [개인정보 수집 및 이용 동의]
@@ -235,7 +239,7 @@ e .연락처
 				  </label>
 				 </div>
 			</div>
-			<div class="my-3" style="border-bottom:  3px solid #56FAB4">
+			<div  class="my-3" style="border-bottom:  2px solid rgb(30, 61, 140)">
 			</div>
 			<div class="my-3">
 				 <input class="form-check-input" type="checkbox" value="" id="allChk">
