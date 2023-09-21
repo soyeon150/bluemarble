@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="/HEYUM/css/waitingroom.css" rel="stylesheet">
+<link href="/Five/css/waitingroom.css" rel="stylesheet">
 </head>
 <body>
 <%@include file="../header.jsp" %>
@@ -66,25 +66,25 @@
 				</button>
 				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton12" style="width: 480px">
 					<li>
-						<img src="/HEYUM/img/imoji/kk1.gif" width="90px" onclick="gifemo(1)">
-						<img src="/HEYUM/img/imoji/kk2.gif" width="90px" onclick="gifemo(2)">
-						<img src="/HEYUM/img/imoji/kk3.gif" width="90px" onclick="gifemo(3)">
-						<img src="/HEYUM/img/imoji/kk4.gif" width="90px" onclick="gifemo(4)">
-						<img src="/HEYUM/img/imoji/kk5.gif" width="90px" onclick="gifemo(5)">
+						<img src="/Five/img/imoji/kk1.gif" width="90px" onclick="gifemo(1)">
+						<img src="/Five/img/imoji/kk2.gif" width="90px" onclick="gifemo(2)">
+						<img src="/Five/img/imoji/kk3.gif" width="90px" onclick="gifemo(3)">
+						<img src="/Five/img/imoji/kk4.gif" width="90px" onclick="gifemo(4)">
+						<img src="/Five/img/imoji/kk5.gif" width="90px" onclick="gifemo(5)">
 					</li>
 					<li>
-						<img src="/HEYUM/img/imoji/kk6.gif" width="90px" onclick="gifemo(6)">
-						<img src="/HEYUM/img/imoji/kk7.gif" width="90px" onclick="gifemo(7)">
-						<img src="/HEYUM/img/imoji/kk8.gif" width="90px" onclick="gifemo(8)"> 
-						<img src="/HEYUM/img/imoji/kk9.gif" width="90px" onclick="gifemo(9)">
-						<img src="/HEYUM/img/imoji/kk10.gif" width="90px" onclick="gifemo(10)">
+						<img src="/Five/img/imoji/kk6.gif" width="90px" onclick="gifemo(6)">
+						<img src="/Five/img/imoji/kk7.gif" width="90px" onclick="gifemo(7)">
+						<img src="/Five/img/imoji/kk8.gif" width="90px" onclick="gifemo(8)"> 
+						<img src="/Five/img/imoji/kk9.gif" width="90px" onclick="gifemo(9)">
+						<img src="/Five/img/imoji/kk10.gif" width="90px" onclick="gifemo(10)">
 					</li>
 					<li>
-						<img src="/HEYUM/img/imoji/kk11.gif" width="90px" onclick="gifemo(11)">
-						<img src="/HEYUM/img/imoji/kk12.gif" width="90px" onclick="gifemo(12)">
-						<img src="/HEYUM/img/imoji/kk13.gif" width="90px" onclick="gifemo(13)">
-						<img src="/HEYUM/img/imoji/kk14.gif" width="90px" onclick="gifemo(14)">
-						<img src="/HEYUM/img/imoji/kk15.gif" width="90px" onclick="gifemo(15)">
+						<img src="/Five/img/imoji/kk11.gif" width="90px" onclick="gifemo(11)">
+						<img src="/Five/img/imoji/kk12.gif" width="90px" onclick="gifemo(12)">
+						<img src="/Five/img/imoji/kk13.gif" width="90px" onclick="gifemo(13)">
+						<img src="/Five/img/imoji/kk14.gif" width="90px" onclick="gifemo(14)">
+						<img src="/Five/img/imoji/kk15.gif" width="90px" onclick="gifemo(15)">
 					</li>
 				</ul>
 			</div>
@@ -98,7 +98,7 @@
 	</div>
 	</div>
 </div>
-<script src="/HEYUM/js/waitingroom.js" type="text/javascript" ></script>
+<script src="/Five/js/waitingroom.js?ver=1111" type="text/javascript" ></script>
 <%@include file="../footer.jsp" %>
 </body>
 </html>

@@ -145,7 +145,7 @@
 	</div>
 </div>
 
-<script src="/Five/js/lobby.js" type="text/javascript" ></script>
+<script type="text/javascript" src="/Five/js/lobby.js?ver=220610"></script>
 <%@include file="../footer.jsp" %>
 </body>
 </html>
