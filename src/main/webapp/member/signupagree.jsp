@@ -21,7 +21,7 @@
 				
 			</div>
 
-			<div class="col-md-12 my-5">
+			<div id="first_agree" class="col-md-12 my-5">
 				<h4> 회원 약관 </h4>
 				<textarea rows="12" cols="" class="form-control" readonly="readonly" style="background-color: white;">
 제1장 총칙
@@ -215,7 +215,7 @@ e .연락처
 				  </label>
 				 </div>
 			</div>
-			<div  class="col-md-12 my-5">
+			<div id="second_agree"  class="col-md-12 my-5">
 				<h4> 개인 정보 처리 방침</h4>
 				<textarea rows="10" cols="" class="form-control" readonly="readonly" style="background-color: white;">
 [개인정보 수집 및 이용 동의]
@@ -239,22 +239,25 @@ e .연락처
 				  </label>
 				 </div>
 			</div>
-			<div  class="my-3" style="border-bottom:  2px solid rgb(30, 61, 140)">
+			<div   class="my-3" style="border-bottom:  2px solid rgb(30, 61, 140)">
+			
 			</div>
-			<div class="my-3">
+			<div id="all_agree" class="my-3">
+		
 				 <input class="form-check-input" type="checkbox" value="" id="allChk">
+				 
 				  <label class="form-check-label" for="allChk" style="font-weight: bold">
 				    모두 동의 합니다. (필수)
 				  </label>
 				 </div>
 			
-			<div class="col-md-4 offset-4">
+			<div id="last_agree" class="col-md-4 offset-4">
 				<div class="row text-center">
 					<div class="col-md-6">
-						<button class="btn" onclick="next()"> 회원가입 </button>
+						<button id="btn" class="btn" onclick="next()"> 회원가입 </button>
 					</div>
 					<div class="col-md-6">
-						<a href="/Five/main.jsp"><button class="btn" type="button">   취소 </button> </a>
+						<a href="/Five/main.jsp"><button id="btn" class="btn" type="button">   취소 </button> </a>
 					</div>
 				</div>
 			</div>
