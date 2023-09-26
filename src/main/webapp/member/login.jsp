@@ -28,6 +28,7 @@
 		
 		.input_group input{
 		
+		
 		  border: 1px solid lightgrey;
 		
 		  border-radius: 5px;
@@ -47,7 +48,6 @@
 		  -moz-transition: all .1s linear;
 		
 		  -webkit-appearance:none;
-		
 		}
 		
 		
@@ -129,6 +129,11 @@
 		
 		.login_btn{
 			margin-left : 10px;
+			
+		}
+		
+		#btn_id:hover{
+		color: rgb(111, 140, 139);
 		}
 	</style>
 </head>
@@ -147,7 +152,7 @@
 			
 			<div class="col-md-4 offset-4">
 				<div class="text-center my-5">
-					<img alt="" src="/Five/img/main/logo.png"> 
+					<img alt="" src="/Five/img/main/web_logo.gif"> 
 				</div>
 				<div class="input_group">
 				
@@ -166,7 +171,7 @@
 				<div class="my-2 login_btn" >
 					<div class="row">
 						<div class="col-md-4 offset-2">
-							<button type="button" class="form-control my-3 text-center" style="height:50px; width: 231.19px; background-color: #56FAB4; color:gray; font-weight: bold" onclick="login()" >로그인</button>
+							<button type="button" class="form-control my-3 text-center" style="height:50px; width: 231.19px; background-color: #1E3D8C; color:white; font-weight: bold" onclick="login()" >로그인</button>
 						</div>
 					</div>
 				</div>
@@ -179,8 +184,8 @@
 					</div>
 				</div>
 				<div class="my-5 d-flex offset-2 login_btn"> 
-					<span> <a href="/Five/member/signupagree.jsp"> <button class="btn"> 회원가입 </button> </a> </span>
-					<span> <a href="/Five/member/find.jsp"><button class="btn"> 아이디 / 비밀번호 찾기 </button> </a> </span>
+					<span> <a href="/Five/member/signupagree.jsp"> <button id="btn_id" class="btn"> 회원가입 </button> </a> </span>
+					<span> <a href="/Five/member/find.jsp"><button id="btn_id" class="btn"> 아이디 / 비밀번호 찾기 </button> </a> </span>
 				</div>
 			</div>
 

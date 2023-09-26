@@ -42,13 +42,13 @@
 					</div>
 					<div class="carousel-inner">	<!-- 이미지 목록 -->
 						<div class="carousel-item active">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img alt="" src="img/main/bannertest.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img alt="" src="img/main/bluemarble_intro.png" width="90%"></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img alt="" src="img/main/bannertest2.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img alt="" src="img/main/bannertest2.gif" width="90%"></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img alt="" src="img/main/bannertest3.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img alt="" src="img/main/bannertest3.gif" width="90%"></a>
 						</div>
 					</div>
 					<!-- 왼쪽 이동 버튼 -->
