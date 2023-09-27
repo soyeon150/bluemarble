@@ -7,8 +7,8 @@
 </head>
 <body>
 <%@include file="../header.jsp" %>
-<input hidden="true" id="loginid" value="<%=account.getAc_id() %>">
-<input hidden="true" id="loginacno" value="<%=account.getAc_no() %>">
+<input type="hidden" id="loginid" value="<%=account.getAc_id() %>">
+<input type="hidden" id="loginacno" value="<%=account.getAc_no() %>">
 <div class="container">
 	<div class="row my-5">
 	

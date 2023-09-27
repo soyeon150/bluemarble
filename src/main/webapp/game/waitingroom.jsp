@@ -9,8 +9,8 @@
 </head>
 <body>
 <%@include file="../header.jsp" %>
-<input hidden="true" id="loginid" value="<%=account.getAc_id() %>">
-<input hidden="true" id="loginacno" value="<%=account.getAc_no() %>">
+<input type="hidden" id="loginid" value="<%=account.getAc_id() %>">
+<input type="hidden" id="loginacno" value="<%=account.getAc_no() %>">
 
 <div class="container">
 
@@ -98,7 +98,7 @@
 	</div>
 	</div>
 </div>
-<script src="/Five/js/waitingroom.js?ver=1111" type="text/javascript" ></script>
+<script src="/Five/js/waitingroom.js?ver=220610" type="text/javascript" ></script>
 <%@include file="../footer.jsp" %>
 </body>
 </html>

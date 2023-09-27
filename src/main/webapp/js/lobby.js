@@ -204,7 +204,7 @@ let roomname = prompt('방이름을 입력해주세요', '');
 			url : '/Five/lobby/gotoroom',
 			data : {"type" : "make" , "roomname" : roomname},
 			success : function(result){
-				inroomno = result;
+				inroomno = result+1;
 				$.ajax({
 					url : '/Five/lobby/getgamelist',
 					success: function(result2){
