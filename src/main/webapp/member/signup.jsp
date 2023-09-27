@@ -5,11 +5,9 @@
 <head>
 	<link href="/Five/css/signup.css" rel="stylesheet">
 		<style type="text/css">
-		body{
 		
-		  font-family: sans-serif;
 		
-		}
+		
 		
 		
 		
@@ -133,8 +131,8 @@
 		</div>
 		<br>
 		<form onsubmit="return false"><!-- onsubmit="return false" : 예외처리 ok 시 true 변경, 전송 -->
-			<div class="row">
-				<div class="col-md-6 offset-3">
+			<div  class="row">
+				<div id="main_part" class="col-md-6 offset-3">
 				
 					<h5>이메일</h5>
 					

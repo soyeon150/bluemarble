@@ -6,16 +6,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-	#start:hover {
-	  -webkit-transform: scale(0.8);
-	  -moz-transform: scale(0.8);
-	  -ms-transform: scale(0.8);
-	  -o-transform: scale(0.8);
-	  transform: scale(0.8);
-	}
-	</style>
-<title>메인 페이지</title>
+
+
+<title>웹 블루마블</title>
 </head>
 <body>
 
@@ -49,13 +42,13 @@
 					</div>
 					<div class="carousel-inner">	<!-- 이미지 목록 -->
 						<div class="carousel-item active">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img alt="" src="img/main/bannertest.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img alt="" src="img/main/bluemarble_intro.png" width="90%"></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img alt="" src="img/main/bannertest2.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img alt="" src="img/main/bannertest2.gif" width="90%"></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img alt="" src="img/main/bannertest3.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img alt="" src="img/main/bannertest3.gif" width="90%"></a>
 						</div>
 					</div>
 					<!-- 왼쪽 이동 버튼 -->
@@ -73,11 +66,15 @@
 					<div class="col-md-12">
 						<% if(session.getAttribute("Login") != null) {%>
 						<br><br>
-						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/button1.png" width="80%"> </a>
+						
+						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/start_button.gif" > </a>
+				
 						<%} else { %>
 						<br><br>
-						<img id="start" alt="" src="/Five/img/main/button1.png" width="80%" onclick="nonlogin()">
+						<img id="start" alt="" src="/Five/img/main/start_button.gif"  onclick="nonlogin()">
+						
 						<%} %>
+					
 						
 					</div>
 					<div class="col-md-12 text-center" style="font-weight: bold;">
@@ -100,15 +97,15 @@
 				<div class="right_first">
 				<div>
 					
-					<h4 class="text-center"> 해윰마블 일정 모음 </h4>
+					<h4 class="text-center"> 웹 마블 일정 모음 </h4>
 				</div>
 				<div class="right-info">
 					<br>
-					<ul style="font-size : 25px;  ">
-						<li> 06-07 : 클로즈베타 시작  </li>
-						<li> 06-08 : 중간 점검 </li>
-						<li> 06-09 : 최종 마무리 </li>
-						<li> 06-10 : 오ㅡ픈 !</li>
+					<ul style="font-size : 22px;  ">
+						<li> 09-22 : main page 완성  </li>
+						<li> 09-25 : game page 완성 </li>
+						<li> 09-26 : 오픈 </li>
+					
 					</ul>
 					
 				</div>

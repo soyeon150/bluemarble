@@ -3,7 +3,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	font-family: 'MaplestoryLight';
+	font-family: 'SUITE-Regular';
 }
 
 @font-face {
@@ -14,59 +14,62 @@
 	font-family: 'MaplestoryLight';
     src: url('/Five/css/MaplestoryLight.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-a{
+#headerfont{
 	text-decoration: none;
+
 	color: black;
+	font-size: 18px;
+	padding-right: 30px;
+	margin-top: 75px;
+	
+
+}
+#headerfont:hover{
+	color: rgb(111, 140, 139);
 }
 
-a:hover {
-	color: #9AD0EC;
-}
-
-.mainbackground{
-	background-color: #DAEAF1;
-}
-/*
-a{
-	text-decoration: none;
-	color:#001D6E;
-}
-*/
-/*
-a:hover {
-	color:#001D6E;
-}
-*/
 
 
-.hearder-topmenu{
-	margin-left: 20px;
-}
+
+
+
+
 
 #headerbar a{
-	/*margin-bottom: 50px;*/
-	font-family: 'maplestory';
+	text-decoration: none;
+	font-family: 'CookieRun-Regular';
 	color : white;
 	font-size: 25px;
 }
 
-.btntext{
-	font-size:20px;
-}
 
 #headerbar a:hover{
-	color: white;
+	color: rgb(198, 230, 230);
 }
 
-h1{
-	font-family: 'maplestory';
-	padding : 10px 0px; 
-}
 
 .secondrow{
-	/*background-color: #1572A1;*/
-	background : linear-gradient(to bottom, #485563, #29323c);	
+
+	background-color: rgb(30, 61, 140);
 }
 
 .center_board{
@@ -104,34 +107,55 @@ h1{
 	margin-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-.footer{
-	margin-top: 100px;
-	padding-top : 80px;
+#start{
+	width: 80%;
+	margin-left: 8%;
 }
 
+#start :hover {
+	transform: scale(1.5);  
+    transition: transform .5s; 
+}
+
+
+
+
+
+
+
+#footer_content{
+	height: 70%;
+}
+
+#footer_middle{
+	padding-top: 1%;
+}
+
+
 .footer h3, h5{
-	font-family: 'maplestory';
+
+	font-family: 'Chosunilbo_myungjo';
+	font-size: 15px;
+}
+.footer p{
+	font-family: 'Chosunilbo_myungjo';
+	font-size: 10px;
 }
 
 .footerbg{
-		background : linear-gradient(to bottom, #485563, #29323c);
+		background-color:rgb(54, 60, 88);
 		color:white;
 		height : 400px;
+		
 }
+
 
 
 
 .introducedetail{
+
 	padding-top:20px;
-	padding-left:50px;
-	line-height: 180%;
+
 }
 
 

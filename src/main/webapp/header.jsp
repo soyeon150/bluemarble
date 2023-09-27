@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>마블해윰</title>
+<title>웹 블루마블</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- 사용자 정의 css -->
@@ -40,15 +40,15 @@
 				<ul class="nav">
 					<% if(account == null) {%>
 					
-					<li><a class="hearder-topmenu" href="/Five/member/login.jsp"> <button class="btn btntext" > 로그인 </button></a></li>
-					<li><a class="hearder-topmenu" href="/Five/member/signupagree.jsp"> <button class="btn btntext" > 회원가입 </button></a></li>
+					<li><a class="hearder-topmenu" href="/Five/member/login.jsp"> <button id ="headerfont" class="btn btntext" > 로그인 </button></a></li>
+					<li><a class="hearder-topmenu" href="/Five/member/signupagree.jsp"> <button id ="headerfont" class="btn btntext" > 회원가입 </button></a></li>
 
 					<%} else if(account !=null) { %>
 					<li style="display: none"><div ><input id="my_num" hidden="" readonly="readonly" value="<%=account.getAc_no()%>"></div></li>
 					<li><a class="hearder-topmenu" href="/Five/member/mypage.jsp"> <button class="btn" > 
 					<img id="mymypro" alt=""  style="width: 50px " class="rounded-circle">
 					<span id="headernick"></span>
-					</button> </a> <button class="btn my-2" onclick="logout()"> 로그아웃 </button></li>
+					</button> </a> <button id ="headerfont" class="btn my-2" onclick="logout()"> 로그아웃 </button></li>
 					<%}%>
 					
 					
@@ -64,8 +64,10 @@
 				<ul id="headerbar" class="nav d-flex justify-content-between">
 					<li><a href="/Five/introduce.jsp">마블 해윰 소개!</a></li>
 					<li><a href="notice.do?key=&keyword=&category=1">공지 사항</a></li>
+					<li><a href="/Five/introduce.jsp">웹 마블 소개</a></li>
+					<li><a href="/Five/notice.do?key=&keyword=&category=1">공지 사항</a></li>
 					<li><a href="/Five/board/board_list.jsp?key=&keyword=&category=2">팁과 노하우</a></li>
-					<li><a href="/Five/board/board_list.jsp?key=&keyword=&category=3">질문과 답변</a></li>
+					<li><a href="/Five/qna.do?key=&keyword=&category=3">질문과 답변</a></li>
 					<li><a href="/Five/board/board_list.jsp?key=&keyword=&category=4">자유 게시판</a></li>
 					<li><a href="/Five/member/ranking.jsp"> 명예의 전당 </a></li>
 				</ul>

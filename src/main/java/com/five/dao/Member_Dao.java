@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 import com.five.dto.Account;
 import com.five.dto.Notice;
+import com.five.dto.Qna;
 
 import util.DBManager;
 
@@ -873,4 +874,29 @@ public class Member_Dao {
 			DBManager.close(conn, pstmt);
 		}
 	}
+	
+	public ArrayList<Qna> QnaAll() {
+		String sql = "select * from qna";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		ArrayList<Qna> nlist = new ArrayList<Qna>();
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Qna qna = new Qna();
+				qna.setQtitle(rs.getString("qtitle"));
+				qna.setQuestion(rs.getString("question"));
+				qna.setAnswer(rs.getString("anwer"));
+				nlist.add(qna);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return nlist;
+	} 
 }
