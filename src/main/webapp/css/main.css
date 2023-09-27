@@ -32,14 +32,20 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 #headerfont{
 	text-decoration: none;
 
 	color: black;
 	font-size: 18px;
-	padding-right: 30px;
+
 	margin-top: 75px;
+	margin-right: 55px;
 	
 
 }
@@ -59,6 +65,7 @@
 	font-family: 'CookieRun-Regular';
 	color : white;
 	font-size: 25px;
+	
 }
 
 
@@ -70,6 +77,8 @@
 .secondrow{
 
 	background-color: rgb(30, 61, 140);
+	width: 80%;
+	border-radius: 15px;
 }
 
 .center_board{
@@ -107,15 +116,58 @@
 	margin-bottom: 30px;
 }
 
-#start{
+#button_text{
+	padding-right: 60px;
+	
+}
+#start_2{
 	width: 80%;
-	margin-left: 8%;
+	margin-right:530px;
 }
 
-#start :hover {
-	transform: scale(1.5);  
-    transition: transform .5s; 
+
+/*
+배너 사진 슬라이드바
+*/
+
+
+
+#banner_img{
+	margin-left: 50px;
 }
+#slide_bottom{
+
+	margin-right: 230px;
+	
+}
+
+#left_slide{
+	
+	padding-left: 20px;
+}
+
+#right_slide{
+	margin-right: 400px;
+	
+	
+}
+
+#slide_icon{
+	width:80%;
+	
+}
+	
+
+
+.static {
+  position:absolute;
+
+}
+
+.static:hover {
+  opacity:0;
+}
+
 
 
 

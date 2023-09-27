@@ -20,7 +20,7 @@
 		
 		  position: relative;
 		
-		  padding-top: 13px;
+		 
 		
 		}
 		

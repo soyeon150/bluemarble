@@ -61,6 +61,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="my-3 text-center">
+				<ul id="headerbar" class="nav d-flex justify-content-between" >
 				<ul id="headerbar" class="nav d-flex justify-content-between">
 					<li><a href="/Five/introduce.jsp">마블 해윰 소개!</a></li>
 					<li><a href="notice.do?key=&keyword=&category=1">공지 사항</a></li>
