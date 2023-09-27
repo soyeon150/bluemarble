@@ -61,7 +61,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="my-3 text-center">
-				<ul id="headerbar" class="nav d-flex justify-content-between">
+				<ul id="headerbar" class="nav d-flex justify-content-between" >
 					<li><a href="/Five/introduce.jsp">웹 마블 소개</a></li>
 					<li><a href="/Five/board/board_list.jsp?key=&keyword=&category=1">공지 사항</a></li>
 					<li><a href="/Five/board/board_list.jsp?key=&keyword=&category=2">팁과 노하우</a></li>
