@@ -20,6 +20,8 @@ import util.DBManager;
 public class Member_Dao {
 
 	public static Member_Dao m_dao = new Member_Dao();
+	
+	
 
 private Member_Dao() {
 		
