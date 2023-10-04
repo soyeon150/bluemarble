@@ -21,14 +21,16 @@ public class Member_Dao {
 
 	public static Member_Dao m_dao = new Member_Dao();
 	
-	private Member_Dao() {
+	
+
+private Member_Dao() {
 		
 	}
 	private static Member_Dao instance = new Member_Dao();
 	public static Member_Dao getInstance() {
 		return instance;
 	}
-
+	
 /////// ouath 2.0 로그인 시스템 ///////////////////////////////////////////////////////////////////////////////
 	public Account snsLoginCheck(Account account) {
 		String sql = "";
