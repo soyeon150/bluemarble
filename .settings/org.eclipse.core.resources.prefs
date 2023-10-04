@@ -1,3 +1,7 @@
 eclipse.preferences.version=1
+
+encoding//src/main/webapp/introduce/introduce.jsp=UTF-8
+
 encoding//src/main/webapp/member/noticeContent.jsp=UTF-8
+
 encoding/<project>=UTF-8
