@@ -65,7 +65,7 @@ function page(i){
 		}
 //////////////////////////////// 움직이는 이모티콘 //////////////////////////////////		
 		if(receivedmsg[0]["type"]=="emo"){
-			let html = receivedmsg[0]["nick"] +'　:　'+ '<img src="/HEYUM/img/imoji/kk'+receivedmsg[0]['content']+'.gif" width="90px">' +  '<br>';
+			let html = receivedmsg[0]["nick"] +'　:　'+ '<img src="/Five/img/imoji/kk'+receivedmsg[0]['content']+'.gif" width="90px">' +  '<br>';
 			$("#chattingbox").append(html);
 			$('#chattingbox').scrollTop($('#chattingbox')[0].scrollHeight);	
 		}
@@ -204,7 +204,7 @@ let roomname = prompt('방이름을 입력해주세요', '');
 			url : '/Five/lobby/gotoroom',
 			data : {"type" : "make" , "roomname" : roomname},
 			success : function(result){
-				inroomno = result;
+				inroomno = result+1;
 				$.ajax({
 					url : '/Five/lobby/getgamelist',
 					success: function(result2){

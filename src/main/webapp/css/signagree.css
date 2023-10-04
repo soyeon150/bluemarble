@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+	
+#first_agree h4{
+	padding-top: 30px
+}
+#second_agree label{
+	padding-bottom: 10px;
+}
+
+	
+#last_agree button{
+	font-family: 'CookieRun-Regular';
+	margin-bottom: 40px;
+	font-size: 25px;
+}
+#last_agree button:hover{
+	color: rgb(198, 230, 230);
+}
+

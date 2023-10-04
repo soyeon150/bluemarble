@@ -6,20 +6,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-	#start:hover {
-	  -webkit-transform: scale(0.8);
-	  -moz-transform: scale(0.8);
-	  -ms-transform: scale(0.8);
-	  -o-transform: scale(0.8);
-	  transform: scale(0.8);
-	}
-	</style>
-<title>메인 페이지</title>
+
+
+<title>웹 블루마블</title>
+<link href="/Five/css/main.css" rel="stylesheet">
 </head>
 <body>
 
 	<%@include file="header.jsp" %>
+	
 	
 	<% 
 	int category_notice = 1;
@@ -42,30 +37,50 @@
 			<div class="col-md-9">
 				<div id="mainslide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">	
 					<!-- 슬라이드 하단 위치 버튼 -->
-					<div class="carousel-indicators">
+					<div  id ="slide_bottom"class="carousel-indicators">
 						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="0" class="active"></button>
 						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="1"></button>
 						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="2"></button>
+						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="3"></button>
+						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="4"></button>
+						<button type="button" data-bs-target="#mainslide" data-bs-slide-to="5"></button>
 					</div>
-					<div class="carousel-inner">	<!-- 이미지 목록 -->
+					<div id="banner_img" class="carousel-inner">	<!-- 이미지 목록 -->
 						<div class="carousel-item active">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img alt="" src="img/main/bannertest.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=165&pagenum=1"><img class="static" src="img/main/bluemarble_intro.png" width="85%">
+							<img class="move" src="img/main/banner1.gif" width=85%></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img alt="" src="img/main/bannertest2.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=166&pagenum=1"><img class="static" src="img/main/notice.png" width="85%">
+							<img class="move" src="img/main/notice.gif" width=85%></a>
 						</div>
 						<div class="carousel-item">	<!-- 이미지 -->
-							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img alt="" src="img/main/bannertest3.gif" width="100%"></a>
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img class="static" src="img/main/tip.png" width="85%">
+							<img class="move" src="img/main/tip.gif" width=85%></a>
+						</div>
+						<div class="carousel-item">	<!-- 이미지 -->
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img class="static" src="img/main/qna.png" width="85%">
+							<img class="move" src="img/main/qna.gif" width=85%></a>
+						</div>
+						<div class="carousel-item">	<!-- 이미지 -->
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img class="static" src="img/main/free.png" width="85%">
+							<img class="move" src="img/main/free.gif" width=85%></a>
+						</div>
+						<div class="carousel-item">	<!-- 이미지 -->
+							<a href="board/board_view.jsp?key=&keyword=&category=1&bno=169&pagenum=1"><img class="static" src="img/main/rank.png" width="85%">
+							<img class="move" src="img/main/rank.gif" width=85%></a>
 						</div>
 					</div>
+						<div class="slide_icon" id="slide_icon">
 					<!-- 왼쪽 이동 버튼 -->
-					<button class="carousel-control-prev" type="button" data-bs-target="#mainslide" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
+					<button  class="carousel-control-prev" type="button" data-bs-target="#mainslide" data-bs-slide="prev">
+						<span id="left_slide" class="carousel-control-prev-icon"></span>
 					</button>
 					<!-- 오른쪽 이동 버튼 -->
-					<button class="carousel-control-next" type="button" data-bs-target="#mainslide" data-bs-slide="next">
-						<span class="carousel-control-next-icon"></span>
-					</button>			
+					<button  class="carousel-control-next" type="button" data-bs-target="#mainslide" data-bs-slide="next">
+						<span id="right_slide" class="carousel-control-next-icon"></span>
+					</button>	
+						</div>		
 				</div>
 			</div>
 			<div class="col-md-3 ">
@@ -73,14 +88,26 @@
 					<div class="col-md-12">
 						<% if(session.getAttribute("Login") != null) {%>
 						<br><br>
-						<a href="game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/gamestart.png" width="100%"> </a>
+
+						<a href="/Five/game/lobby.jsp"> <img id="start" alt="" src="/Five/img/main/button1.png" width="80%"> </a>
+
+						
+						<a href="game/lobby.jsp"> 
+				
+						<img id="start_2" src="/Five/img/main/start_button.gif" >
+						</a>
+				
+
 						<%} else { %>
 						<br><br>
-						<img id="start" alt="" src="/Five/img/main/gamestart.png" width="100%" onclick="nonlogin()">
+					
+						<img id="start_2" src="/Five/img/main/start_button.gif" onclick="nonlogin()">
+						
 						<%} %>
+					
 						
 					</div>
-					<div class="col-md-12 text-center" style="font-weight: bold;">
+					<div id ="button_text" class="col-md-12 text-center" style="font-weight: bold;">
 						<% if(session.getAttribute("Login") != null) {%>
 						<%=account.getAc_nickname()%>님 환영 합니다
 						<%} else { %>
@@ -100,15 +127,15 @@
 				<div class="right_first">
 				<div>
 					
-					<h4 class="text-center"> 해윰마블 일정 모음 </h4>
+					<h4 class="text-center"> 웹 마블 일정 모음 </h4>
 				</div>
 				<div class="right-info">
 					<br>
-					<ul style="font-size : 25px;  ">
-						<li> 06-07 : 클로즈베타 시작  </li>
-						<li> 06-08 : 중간 점검 </li>
-						<li> 06-09 : 최종 마무리 </li>
-						<li> 06-10 : 오ㅡ픈 !</li>
+					<ul style="font-size : 22px;  ">
+						<li> 09-22 : main page 완성  </li>
+						<li> 09-25 : game page 완성 </li>
+						<li> 09-26 : 오픈 </li>
+					
 					</ul>
 					
 				</div>
@@ -128,16 +155,11 @@
 				
 				</div>
 				
-		</div>
-		
-		
-		</div>
-	</div>
-	
+
 	<%@include file="footer.jsp" %>
 
 
-	<script type="text/javascript" src="/Five/js/main.js"></script>
+	<script type="text/javascript" src="/Five/js/main.js?ver=12341"></script>
 
 </body>
 </html>
