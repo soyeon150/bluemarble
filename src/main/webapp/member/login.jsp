@@ -202,7 +202,7 @@
 	} ); /* 설정정보를 초기화하고 연동을 준비 */
 	naverLogin.init();
   </script>
-  <script src="/Five/js/login.js"></script>
+  <script src="/Five/js/login.js?ver=12341"></script>
   <%@include file="../footer.jsp" %>
 </body>
 </html>

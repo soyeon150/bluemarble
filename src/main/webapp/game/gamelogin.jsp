@@ -15,7 +15,7 @@
 <button onclick="login()">로그인</button>
 
 
-<script src="/Five/js/gamelogin.js" type="text/javascript"></script>
+<script src="/Five/js/gamelogin.js?ver=1111" type="text/javascript"></script>
 
 </body>
 </html>
