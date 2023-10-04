@@ -6,11 +6,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.five.dto.Account;
+import com.five.dto.Notice;
+import com.five.dto.Qna;
 
 import util.DBManager;
 
@@ -18,6 +21,14 @@ public class Member_Dao {
 
 	public static Member_Dao m_dao = new Member_Dao();
 
+private Member_Dao() {
+		
+	}
+	private static Member_Dao instance = new Member_Dao();
+	public static Member_Dao getInstance() {
+		return instance;
+	}
+	
 /////// ouath 2.0 로그인 시스템 ///////////////////////////////////////////////////////////////////////////////
 	public Account snsLoginCheck(Account account) {
 		String sql = "";
@@ -741,5 +752,151 @@ public class Member_Dao {
 		return null;
 	}
 	
-
+	public ArrayList<Notice> getNotice() {
+		String sql = "select * from notice";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		ArrayList<Notice> nlist = new ArrayList<Notice>();
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Notice notice = new Notice();
+				notice.setNum(rs.getInt("num"));
+				notice.setNtitle(rs.getString("ntitle"));
+				notice.setNcontent(rs.getString("ncontent"));
+				nlist.add(notice);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return nlist;
+	}
+	public ArrayList<Notice> getNoticeOne(String t) {
+		String sql = "select * from notice where ntitle=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		ArrayList<Notice> nlist = new ArrayList<Notice>();
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, t);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				Notice notice = new Notice();
+				notice.setNum(rs.getInt("num"));
+				notice.setNtitle(rs.getString("ntitle"));
+				notice.setNcontent(rs.getString("ncontent"));
+				nlist.add(notice);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return nlist;
+	}
+	public ArrayList<Notice> getNoticeC(String c) {
+		String sql = "select * from notice where ntitle = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		ArrayList<Notice> nlist = new ArrayList<Notice>();
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, c);
+			rs = pstmt.executeQuery();
+			if(rs.next()) {
+				Notice notice = new Notice();
+				notice.setNum(rs.getInt("num"));
+				notice.setNtitle(rs.getString("ntitle"));
+				notice.setNcontent(rs.getString("ncontent"));
+				nlist.add(notice);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return nlist;
+	}
+	public void noticeInsert(Notice no) {
+		String sql = "insert into notice values(no.nextval, ?, ?)";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, no.getNtitle());
+			pstmt.setString(2, no.getNcontent());
+			pstmt.executeUpdate();
+		}catch(Exception e) {
+			
+		}finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
+	public void noticeDelete(int n) {
+		String sql = "delete from notice where num = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, n);
+			pstmt.executeUpdate();
+		}catch(Exception e) {
+			
+		}finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
+	public void noticeUpdate(Notice no, String t) {
+		String sql = "update notice set ntitle = ?, ncontent = ? where ntitle = ?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, no.getNtitle());
+			pstmt.setString(2, no.getNcontent());
+			pstmt.setString(3, t);
+			pstmt.executeUpdate();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt);
+		}
+	}
+	
+	public ArrayList<Qna> QnaAll() {
+		String sql = "select * from qna";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		ArrayList<Qna> nlist = new ArrayList<Qna>();
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Qna qna = new Qna();
+				qna.setQtitle(rs.getString("qtitle"));
+				qna.setQuestion(rs.getString("question"));
+				qna.setAnswer(rs.getString("anwer"));
+				nlist.add(qna);
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+		}
+		return nlist;
+	} 
 }
